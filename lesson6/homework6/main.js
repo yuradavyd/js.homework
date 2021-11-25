@@ -37,7 +37,7 @@
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 
 // let str = ' dirty string   ';
-// console.log((str.split(' ').join('')));
+// console.log(str.replace(/\s+/g, ' ').trim());
 
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
 //     let str = 'Каждый охотник желает знать';
