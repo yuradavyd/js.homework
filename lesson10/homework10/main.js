@@ -62,4 +62,5 @@ for (const item of commentsList) {
     div.append(h3, p, btn);
     divMain.append(div);
 }
-document.body.appendChild(divMain)
+let divSuperMain = document.getElementById('super');
+divSuperMain.appendChild(divMain);
