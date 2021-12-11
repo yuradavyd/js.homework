@@ -22,7 +22,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                     .then((comments) => {
                         let divComment = document.createElement('div');
                         for (let comment of comments) {
-                            divComment.innerHTML = `<p>id: ${comment.id}</p> <h2>name: ${comment.name}</h2> <h4>email: ${comment.email}</h4> <h3>body: ${comment.body}</h3>`
+                            divComment.innerHTML += `<p>id: ${comment.id}</p> <h2>name: ${comment.name}</h2> <h4>email: ${comment.email}</h4> <h3>body: ${comment.body}</h3>`
                         }
                         wrap.appendChild(divComment);
                     });
